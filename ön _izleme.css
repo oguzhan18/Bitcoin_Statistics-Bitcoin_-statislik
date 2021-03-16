@@ -1,0 +1,208 @@
+.footer {
+  width: 100%;
+  height: 120px;
+  background-color: #0A2463;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+@media (min-width: 576px) {
+  .footer {
+    height: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    height: 70px;
+  }
+}
+.disclaimer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.main-content {
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 120px;
+  padding-top: 70px;
+}
+
+@media (min-width: 576px) {
+  .main-content {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 992px) {
+  .main-content {
+    padding-bottom: 70px;
+  }
+}
+.dolar, .euro, .pound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: #0A2463;
+  color: white;
+}
+
+.page-title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 360px) {
+  .page-title {
+    font-size: 2.2rem;
+  }
+}
+.all {
+  min-height: 100%;
+  position: relative;
+}
+
+.dolar-wrapper, .euro-wrapper, .pound-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 2rem;
+  background-color: rgba(255, 0, 255, 0.1);
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .dolar-wrapper, .euro-wrapper, .pound-wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+.fiat-name {
+  margin-left: 0.5rem;
+}
+
+.fiat-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .fiat-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+.statement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 120px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .statement {
+    padding-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.up-down {
+  padding-left: 0.5rem;
+}
+
+@-webkit-keyframes upDown {
+  0% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+@keyframes upDown {
+  0% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+  50% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  100% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+.arrow-wrapper {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  padding-top: 18px;
+  margin-left: 10px;
+  -webkit-animation: upDown 2s linear infinite;
+  animation: upDown 2s linear infinite;
+}
